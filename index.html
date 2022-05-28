@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form">
+            <div class="head">
+                <div style="width: 20%;">
+                    <hr>
+                </div>
+                <span>Sign Up  Here</span>
+                <div style="width: 50%;">
+                    <hr>
+                </div>
+            </div>
+            <input type="text" placeholder="Full Name" class="input" id="name">
+            <input type="email" placeholder="Email Address" class="input" id="email">
+            <input type="telephone" placeholder="Mobile Number" class="input" id="number">
+            <input type="password" name="" id="password" placeholder="password" class="input" >
+            <input type="password" id="conf-password" placeholder="Confirm Password" class="input" >
+            <span>Gender</span>
+            <div class="input-div"> 
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="0">
+                <label for="female">Female</label>
+                <input type="radio"id="female" name="gender" value="1">
+                <label for="others">Other</label>
+                <input type="radio" id="others" name="gender" value="2">
+            </div>
+            <span>Prior Experience</span>
+            <div class="input-div">
+                <label for="designer">Designer</label>
+                <input type="checkbox" id="designer" name="designer" value="0">
+                <label for="developer">Developer</label>
+                <input type="checkbox" id="developer" name="developer" value="1">
+                <label for="other">Other</label>
+                <input type="checkbox" id="other" name="other" value="2">
+            </div>
+            <button class="button" onclick="submitForm()">Sign Up</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
